@@ -29,67 +29,137 @@
     <main class="card">
       <section data-lang="zh-Hant">
         <h1>隱私權政策（Privacy Policy）</h1>
-        <p class="meta">適用版本：Flow Twin 首發版本（v1.0）｜最後更新：2026-11-19</p>
-        <h2>1. 100% 本機運行與零資料收集</h2>
-        <p>Flow Twin 首發版本不設會員帳號、不連接遠端伺服器、不發出任何網路請求，亦未接入任何第三方分析（Analytics）或追蹤 SDK。所有幸運階級運算、節律評估與冰晶渲染均於您的裝置本機完成。</p>
-        <h2>2. 本機資料儲存與刪除</h2>
-        <p>您的每日抽取紀錄與保底計數僅儲存在裝置內的 App 沙盒目錄（<code>Application Support/FlowTwin/flow_ledger.json</code>），不會同步至雲端。您隨時可在 App「設定」中使用「清除本地所有節律與歷史資料」永久刪除所有本機紀錄。</p>
-        <h2>3. 系統權限</h2>
-        <p>Flow Twin 不會請求相機、相簿、定位、麥克風、通訊錄、通知或 App 追蹤透明度（ATT）等任何裝置權限。</p>
-        <h2>4. 廣告狀態說明（首發無廣告）</h2>
-        <p>Flow Twin 首發版本已將所有廣告功能停用，未安裝廣告 SDK，亦不進行任何廣告資料收集。若未來更新版本導入廣告，將於更新上架前另行修訂本隱私權政策並依法揭露。</p>
+        <p class="meta">適用版本：Flow Twin v1.0（含 Google AdMob 與 UMP 區域隱私選項）｜最後更新：2026-11-22</p>
+        <h2>1. 本機抽卡運算與歷史資料儲存</h2>
+        <p>Flow Twin 不設會員帳號，亦未建置開發者自有雲端資料庫。所有幸運階級計算、節律契合度評估、72 角色配對、保底計數與 94 項冰晶語法渲染均於您的 iPhone / iPad 本機完成。</p>
+        <p>您的每日抽取紀錄與保底計數僅儲存在裝置內的 App 沙盒目錄（<code>Application Support/FlowTwin/flow_ledger.json</code>），不會上傳至開發者伺服器。您隨時可在 App「設定」中使用「清除本地所有節律與歷史資料」永久刪除所有本機紀錄。</p>
+        <h2>2. 第三方廣告服務（Google AdMob）與資料處理</h2>
+        <p>為維持免費服務，Flow Twin 於「今日首頁底部橫幅（Banner）」與「每日第 2 抽前插頁（Interstitial）」整合第三方 <strong>Google Mobile Ads SDK (Google AdMob)</strong>，並會透過網路連線載入廣告與更新同意狀態。</p>
+        <p>依您所在地區適用之隱私法規、SDK 設定及您的同意／隱私選擇，Google AdMob 可能收集或處理以下資料以提供廣告、進行頻次控制、防範詐欺及衡量廣告成效：</p>
+        <ul>
+          <li><strong>裝置與廣告識別資訊（Identifiers）</strong>：如裝置識別碼或廣告識別資訊。</li>
+          <li><strong>粗略位置資訊（Coarse Location）</strong>：由 IP 位址推算之非精確地理區域（用於判斷適用之區域隱私法規與投放相應廣告）。</li>
+          <li><strong>廣告互動與使用資料（Usage &amp; Advertising Data）</strong>：廣告載入、曝光、點擊及相關產品互動資訊。</li>
+          <li><strong>診斷與效能資料（Diagnostics）</strong>：廣告 SDK 運作相關之當機紀錄與效能診斷資訊。</li>
+        </ul>
+        <p>上述資料是否涉及個人化廣告或跨服務處理，取決於實際 SDK 設定、您於 UMP 表單所作之同意／拒絕（Opt-Out）選擇，以及您裝置的 iOS 系統隱私設定。有關 Google 如何處理資料，請參閱 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>。</p>
+        <h2>3. 歐洲地區（GDPR）與美國各州隱私選擇（UMP 同意管理）</h2>
+        <p>Flow Twin 整合官方 <strong>Google User Messaging Platform (UMP)</strong> 管理區域隱私選擇：</p>
+        <ul>
+          <li><strong>歐洲經濟區、英國與瑞士（EEA / UK / CH）</strong>：在需要取得同意時，App 會在請求任何廣告前顯示官方 UMP 同意表單；未取得有效廣告請求資格前，不會提前請求廣告。</li>
+          <li><strong>適用的美國受規範州別（如加州 CCPA/CPRA、維吉尼亞州、科羅拉多州、康乃狄克州、猶他州等）</strong>：透過 UMP 提供美國各州隱私訊息及拒絕出售或分享個人資訊／目標式廣告（Opt-Out of Sale or Sharing / Targeted Advertising）之選擇。</li>
+          <li><strong>隨時管理或撤回選擇</strong>：當您所在地區需要提供隱私選項入口（<code>privacyOptionsRequirementStatus == .required</code>）時，您可隨時前往 App 內<strong>「設定 → 隱私與本地運算承諾 → 廣告隱私選項」</strong>開啟官方 UMP 表單修改或撤回您的選擇。</li>
+        </ul>
+        <h2>4. 系統權限與聯絡方式</h2>
+        <p>Flow Twin 不會請求相機、相簿、精確 GPS 定位、麥克風、通訊錄或推播通知權限。如有任何隱私相關問題，請聯繫官方信箱：<a href="mailto:oiklp1010@gmail.com">oiklp1010@gmail.com</a>。</p>
       </section>
 
       <section data-lang="zh-Hans" style="display:none">
         <h1>隐私政策（Privacy Policy）</h1>
-        <p class="meta">适用版本：Flow Twin 首发版本（v1.0）｜最后更新：2026-11-19</p>
-        <h2>1. 100% 本地运行与零数据收集</h2>
-        <p>Flow Twin 首发版本不设会员账号、不连接远程服务器、不发出任何网络请求，亦未接入任何第三方分析（Analytics）或追踪 SDK。所有幸运阶级计算、节律评估与冰晶渲染均在您的设备本地完成。</p>
-        <h2>2. 本地数据存储与删除</h2>
-        <p>您的每日抽取记录与保底计数仅存储在设备内的 App 沙盒目录（<code>Application Support/FlowTwin/flow_ledger.json</code>），不会同步至云端。您随时可在 App“设置”中使用“清除本地所有节律与历史资料”永久删除所有本地记录。</p>
-        <h2>3. 系统权限</h2>
-        <p>Flow Twin 不会请求相机、相册、定位、麦克风、通讯录、通知或 App 跟踪透明度（ATT）等任何设备权限。</p>
-        <h2>4. 广告状态说明（首发无广告）</h2>
-        <p>Flow Twin 首发版本已将所有广告功能停用，未安装广告 SDK，亦不进行任何广告数据收集。若未来更新版本引入广告，将在更新发布前另行修订本隐私政策并依法披露。</p>
+        <p class="meta">适用版本：Flow Twin v1.0（含 Google AdMob 与 UMP 区域隐私选项）｜最后更新：2026-11-22</p>
+        <h2>1. 本地抽卡计算与历史数据存储</h2>
+        <p>Flow Twin 不设会员账号，亦未建置开发者自有云端数据库。所有幸运阶级计算、节律契合度评估、72 角色配对、保底计数与 94 项冰晶语法渲染均在您的 iPhone / iPad 本地完成。</p>
+        <p>您的每日抽取记录与保底计数仅存储在设备内的 App 沙盒目录（<code>Application Support/FlowTwin/flow_ledger.json</code>），不会上传至开发者服务器。您随时可在 App“设置”中使用“清除本地所有节律与历史资料”永久删除所有本地记录。</p>
+        <h2>2. 第三方广告服务（Google AdMob）与数据处理</h2>
+        <p>为维持免费服务，Flow Twin 在“今日首页底部横幅（Banner）”与“每日第 2 抽前插页（Interstitial）”集成第三方 <strong>Google Mobile Ads SDK (Google AdMob)</strong>，并会通过网络连接加载广告与更新同意状态。</p>
+        <p>依您所在地区适用的隐私法规、SDK 设置及您的同意／隐私选择，Google AdMob 可能收集或处理以下数据以提供广告、进行频次控制、防范欺诈及衡量广告成效：</p>
+        <ul>
+          <li><strong>设备与广告标识信息（Identifiers）</strong>：如设备标识符或广告标识信息。</li>
+          <li><strong>粗略位置信息（Coarse Location）</strong>：由 IP 地址推算的非精确地理区域（用于判断适用的区域隐私法规与投放相应广告）。</li>
+          <li><strong>广告互动与使用数据（Usage &amp; Advertising Data）</strong>：广告加载、曝光、点击及相关产品互动信息。</li>
+          <li><strong>诊断与性能数据（Diagnostics）</strong>：广告 SDK 运行相关的崩溃日志与性能诊断信息。</li>
+        </ul>
+        <p>上述数据是否涉及个性化广告或跨服务处理，取决于实际 SDK 设置、您在 UMP 表单中所作的同意／拒绝（Opt-Out）选择，以及您设备的 iOS 系统隐私设置。有关 Google 如何处理数据，请参阅 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私权政策</a>。</p>
+        <h2>3. 欧洲地区（GDPR）与美国各州隐私选择（UMP 同意管理）</h2>
+        <p>Flow Twin 集成官方 <strong>Google User Messaging Platform (UMP)</strong> 管理区域隐私选择：</p>
+        <ul>
+          <li><strong>欧洲经济区、英国与瑞士（EEA / UK / CH）</strong>：在需要取得同意时，App 会在请求任何广告前显示官方 UMP 同意表单；未取得有效广告请求资格前，不会提前请求广告。</li>
+          <li><strong>适用的美国受规范州别（如加州 CCPA/CPRA、弗吉尼亚州、科罗拉多州、康涅狄格州、犹他州等）</strong>：通过 UMP 提供美国各州隐私信息及拒绝出售或分享个人信息／定向广告（Opt-Out of Sale or Sharing / Targeted Advertising）的选择。</li>
+          <li><strong>随时管理或撤回选择</strong>：当您所在地区需要提供隐私选项入口（<code>privacyOptionsRequirementStatus == .required</code>）时，您可随时前往 App 内<strong>“设置 → 隐私与本地运算承诺 → 广告隐私选项”</strong>开启官方 UMP 表单修改或撤回您的选择。</li>
+        </ul>
+        <h2>4. 系统权限与联系方式</h2>
+        <p>Flow Twin 不会请求相机、相册、精确 GPS 定位、麦克风、通讯录或推送通知权限。如有任何隐私相关问题，请联系官方邮箱：<a href="mailto:oiklp1010@gmail.com">oiklp1010@gmail.com</a>。</p>
       </section>
 
       <section data-lang="ja" style="display:none">
         <h1>プライバシーポリシー（Privacy Policy）</h1>
-        <p class="meta">対象バージョン：Flow Twin 初回リリース版（v1.0）｜最終更新日：2026-11-19</p>
-        <h2>1. 完全オンデバイス動作・データ収集なし</h2>
-        <p>Flow Twin の初回リリース版にはアカウント機能、外部サーバー通信、ネットワーク送信、およびサードパーティ製の分析・追跡 SDK は一切含まれていません。すべての計算と描画は端末内で完結します。</p>
-        <h2>2. ローカル保存と削除</h2>
-        <p>抽選履歴と天井カウンターは端末内のアプリサンドボックス（<code>Application Support/FlowTwin/flow_ledger.json</code>）にのみ保存され、クラウドへ送信されません。アプリ内の「設定」からいつでもすべてのローカルデータを完全に削除できます。</p>
-        <h2>3. 端末のアクセス権限</h2>
-        <p>カメラ、写真、位置情報、マイク、連絡先、通知、および ATT（App Tracking Transparency）などの権限は一切要求しません。</p>
-        <h2>4. 広告について（初回リリース版は広告なし）</h2>
-        <p>初回リリース版では広告機能はすべて無効化されており、広告 SDK の導入や広告目的のデータ収集は行っていません。将来のアップデートで広告を導入する場合は、公開前に本ポリシーを更新して明示します。</p>
+        <p class="meta">対象バージョン：Flow Twin v1.0（Google AdMob および UMP 地域別プライバシー設定対応）｜最終更新日：2026-11-22</p>
+        <h2>1. 端末内での抽選計算と履歴データのローカル保存</h2>
+        <p>Flow Twin にはアカウント登録機能や開発者独自のクラウドデータベースはありません。運勢ランク計算、リズム適合度評価、72体のキャラクター選定、天井カウンター、および94種のクリスタル構文描画はすべてお使いの iPhone / iPad 端末内で完結します。</p>
+        <p>毎日の抽選履歴と天井カウンターは端末内のアプリサンドボックス（<code>Application Support/FlowTwin/flow_ledger.json</code>）にのみ保存され、開発者のサーバーへ送信されることはありません。アプリ内の「設定」からいつでもすべてのローカルデータを完全に削除できます。</p>
+        <h2>2. サードパーティ広告サービス（Google AdMob）とデータ処理</h2>
+        <p>無料でサービスを提供するため、Flow Twin は「今日ホーム画面下部のバナー（Banner）」および「毎日2回目の抽選前のインタースティシャル（Interstitial）」においてサードパーティ製の <strong>Google Mobile Ads SDK (Google AdMob)</strong> を組み込んでおり、ネットワーク通信を行って広告の読み込みおよび同意ステータスの更新を行います。</p>
+        <p>お住まいの地域の法規制、SDK の設定、およびユーザーの同意・プライバシー選択に従い、Google AdMob は広告配信、フリークエンシー制御、不正防止、および広告効果測定のために以下のデータを処理する場合があります：</p>
+        <ul>
+          <li><strong>デバイスおよび広告識別情報（Identifiers）</strong>：デバイス ID や広告識別子など。</li>
+          <li><strong>おおよその位置情報（Coarse Location）</strong>：IP アドレスから推定される非精密な地域情報（適用される地域別プライバシー法規の判定および広告配信のため）。</li>
+          <li><strong>広告インタラクションおよび利用状況データ（Usage &amp; Advertising Data）</strong>：広告の読み込み、表示、クリックおよび関連する操作イベント。</li>
+          <li><strong>診断およびパフォーマンスデータ（Diagnostics）</strong>：クラッシュログおよび広告読み込みパフォーマンス情報。</li>
+        </ul>
+        <p>これらのデータがパーソナライズド広告やサービス間処理に使用されるかどうかは、実際の SDK 設定、UMP フォームでの同意／オプトアウト選択、および iOS システムのプライバシー設定によって決まります。Google によるデータ処理の詳細は <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> をご参照ください。</p>
+        <h2>3. 欧州地域（GDPR）および米国各州のプライバシー設定（UMP 同意管理）</h2>
+        <p>Flow Twin は公式の <strong>Google User Messaging Platform (UMP)</strong> を通じて地域別のプライバシー選択を管理しています：</p>
+        <ul>
+          <li><strong>欧州経済領域・英国・スイス（EEA / UK / CH）</strong>：同意が必要な場合、広告リクエストを行う前に公式 UMP 同意フォームを表示します。有効な広告リクエスト資格を得る前に広告を事前リクエストすることはありません。</li>
+          <li><strong>適用される米国の対象州（カリフォルニア州 CCPA/CPRA、バージニア州、コロラド州、コネチカット州、ユタ州など）</strong>：UMP を通じて米国各州のプライバシー通知および個人情報の販売・共有／ターゲティング広告のオプトアウト（Opt-Out）選択を提供します。</li>
+          <li><strong>設定の変更・撤回</strong>：プライバシーオプション入口が必要な地域（<code>privacyOptionsRequirementStatus == .required</code>）では、アプリ内の<strong>「設定 → プライバシーとローカル処理の約束 → 広告プライバシーオプション」</strong>からいつでも公式 UMP フォームを開き、選択を管理・撤回できます。</li>
+        </ul>
+        <h2>4. 端末のアクセス権限と連絡先</h2>
+        <p>カメラ、写真、精密な GPS 位置情報、マイク、連絡先、プッシュ通知の権限は要求しません。プライバシーに関するお問い合わせ先：<a href="mailto:oiklp1010@gmail.com">oiklp1010@gmail.com</a>。</p>
       </section>
 
       <section data-lang="ko" style="display:none">
         <h1>개인정보 처리방침（Privacy Policy）</h1>
-        <p class="meta">적용 버전: Flow Twin 첫 출시 버전(v1.0) | 최종 업데이트: 2026-11-19</p>
-        <h2>1. 100% 온디바이스 실행 및 데이터 미수집</h2>
-        <p>Flow Twin 첫 출시 버전은 회원 계정, 원격 서버 연결, 네트워크 요청 및 제3자 분석·추적 SDK를 사용하지 않습니다. 모든 운세 계산과 렌더링은 사용자의 기기 내에서만 처리됩니다.</p>
-        <h2>2. 로컬 저장 및 삭제</h2>
-        <p>일일 추첨 기록과 천장 카운터는 기기 내부 앱 샌드박스(<code>Application Support/FlowTwin/flow_ledger.json</code>)에만 저장되며 클라우드로 전송되지 않습니다. 앱 내 「설정」에서 언제든지 모든 로컬 데이터를 영구 삭제할 수 있습니다.</p>
-        <h2>3. 기기 권한</h2>
-        <p>카메라, 사진, 위치, 마이크, 연락처, 알림 또는 앱 추적 투명성(ATT) 권한을 요청하지 않습니다.</p>
-        <h2>4. 광고 안내 (첫 출시 버전 광고 없음)</h2>
-        <p>첫 출시 버전은 모든 광고 기능이 비활성화되어 있으며 광고 SDK가 포함되어 있지 않습니다. 향후 업데이트에서 광고가 도입될 경우 출시 전 본 방침을 개정하여 고지합니다.</p>
+        <p class="meta">적용 버전: Flow Twin v1.0 (Google AdMob 및 UMP 지역별 개인정보 옵션 포함) | 최종 업데이트: 2026-11-22</p>
+        <h2>1. 기기 내 추첨 연산 및 기록 데이터의 로컬 저장</h2>
+        <p>Flow Twin은 회원 계정이나 개발자 자체 클라우드 서버를 운영하지 않습니다. 모든 운세 등급 계산, 리듬 적합도 평가, 72종 캐릭터 매칭, 천장 카운터 및 94종 크리스탈 구문 렌더링은 사용자의 iPhone / iPad 기기 내에서 처리됩니다.</p>
+        <p>일일 추첨 기록과 천장 카운터는 기기 내부 앱 샌드박스(<code>Application Support/FlowTwin/flow_ledger.json</code>)에만 저장되며 개발자 서버로 업로드되지 않습니다. 앱 내 「설정」에서 언제든지 모든 로컬 데이터를 영구 삭제할 수 있습니다。</p>
+        <h2>2. 제3자 광고 서비스 (Google AdMob) 및 데이터 처리</h2>
+        <p>무료 서비스 제공을 위해 Flow Twin은 '오늘 홈 하단 배너(Banner)'와 '일일 2회차 추첨 전 전면 광고(Interstitial)'에 제3자 <strong>Google Mobile Ads SDK (Google AdMob)</strong>를 통합하고 있으며, 네트워크 연결을 통해 광고를 로드하고 동의 상태를 업데이트합니다.</p>
+        <p>거주 지역의 개인정보 보호법, SDK 설정 및 사용자의 동의·개인정보 선택에 따라 Google AdMob은 광고 제공, 빈도 제어, 사기 방지 및 광고 성과 측정을 위해 다음 데이터를 처리할 수 있습니다:</p>
+        <ul>
+          <li><strong>기기 및 광고 식별 정보 (Identifiers)</strong>: 기기 ID 또는 광고 식별자 등.</li>
+          <li><strong>대략적인 위치 정보 (Coarse Location)</strong>: IP 주소를 통해 추정되는 비정밀 지역 정보 (적용되는 지역 개인정보 법규 확인 및 관련 광고 제공 목적).</li>
+          <li><strong>광고 상호작용 및 사용 데이터 (Usage &amp; Advertising Data)</strong>: 광고 로드, 노출, 클릭 및 관련 상호작용 정보.</li>
+          <li><strong>진단 및 성능 데이터 (Diagnostics)</strong>: 충돌 로그 및 광고 성능 진단 데이터.</li>
+        </ul>
+        <p>해당 데이터가 맞춤형 광고 또는 서비스 간 처리에 사용되는지 여부는 실제 SDK 설정, UMP 양식에서 선택한 동의/거부(Opt-Out) 설정 및 iOS 시스템 개인정보 설정에 따라 결정됩니다. 자세한 내용은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참조하시기 바랍니다.</p>
+        <h2>3. 유럽 지역(GDPR) 및 미국 주별 개인정보 선택 (UMP 동의 관리)</h2>
+        <p>Flow Twin은 공식 <strong>Google User Messaging Platform (UMP)</strong>을 통해 지역별 개인정보 선택을 관리합니다:</p>
+        <ul>
+          <li><strong>유럽경제지역·영국·스위스 (EEA / UK / CH)</strong>: 동의가 필요한 경우 광고를 요청하기 전에 공식 UMP 동의 양식을 표시하며, 유효한 광고 요청 자격을 얻기 전에는 광고를 사전 요청하지 않습니다.</li>
+          <li><strong>적용되는 미국 규제 주 (캘리포니아 CCPA/CPRA, 버지니아, 콜로라도, 코네티컷, 유타 등)</strong>: UMP를 통해 미국 주별 개인정보 안내 및 개인정보 판매·공유/맞춤형 광고 거부(Opt-Out) 옵션을 제공합니다.</li>
+          <li><strong>동의 관리 및 철회</strong>: 개인정보 옵션이 필요한 지역(<code>privacyOptionsRequirementStatus == .required</code>)에서는 언제든지 앱 내 <strong>「설정 → 개인정보 및 온디바이스 연산 약속 → 광고 개인정보 옵션」</strong>에서 공식 UMP 양식을 열어 선택을 변경하거나 철회할 수 있습니다.</li>
+        </ul>
+        <h2>4. 기기 권한 및 문의처</h2>
+        <p>카메라, 사진, 정밀 GPS 위치, 마이크, 연락처 또는 푸시 알림 권한을 요청하지 않습니다. 공식 문의 이메일: <a href="mailto:oiklp1010@gmail.com">oiklp1010@gmail.com</a>.</p>
       </section>
 
       <section data-lang="en" style="display:none">
         <h1>Privacy Policy</h1>
-        <p class="meta">Applies to: Flow Twin Initial Release (v1.0) | Last updated: 2026-11-19</p>
-        <h2>1. 100% On-Device &amp; Zero Data Collection</h2>
-        <p>The initial release of Flow Twin has no user accounts, makes no network requests, and includes no third-party analytics or tracking SDKs. All luck calculations, rhythm evaluations, and crystal rendering run locally on your device.</p>
-        <h2>2. Local Storage &amp; Deletion</h2>
-        <p>Your daily draw history and pity counters are stored strictly inside the app sandbox (<code>Application Support/FlowTwin/flow_ledger.json</code>) and are never synced to the cloud. You can permanently delete all local data anytime in Settings.</p>
-        <h2>3. Device Permissions</h2>
-        <p>Flow Twin requests no device permissions (no camera, photos, location, microphone, contacts, notifications, or App Tracking Transparency).</p>
-        <h2>4. Advertising Status (Ad-Free Initial Release)</h2>
-        <p>All advertising features are disabled in the initial release, no ad SDK is installed, and no ad data is collected. If future updates introduce ads, this Privacy Policy will be updated prior to release.</p>
+        <p class="meta">Applies to: Flow Twin v1.0 (with Google AdMob &amp; UMP Regional Privacy Options) | Last updated: 2026-11-22</p>
+        <h2>1. On-Device Draw Calculations &amp; Local History Storage</h2>
+        <p>Flow Twin has no user accounts and operates no developer cloud databases. All luck tier calculations, FlowFit rhythm evaluations, 72-character pairings, pity counters, and 94 Crystal Syntax renders are computed locally on your iPhone or iPad.</p>
+        <p>Your daily draw history and pity counters are stored strictly inside the local app sandbox (<code>Application Support/FlowTwin/flow_ledger.json</code>) and are never uploaded to developer servers. You can permanently delete all local data anytime in Settings.</p>
+        <h2>2. Third-Party Advertising (Google AdMob) &amp; Data Processing</h2>
+        <p>To offer Flow Twin for free, the app integrates the third-party <strong>Google Mobile Ads SDK (Google AdMob)</strong> for the Today home bottom banner and the interstitial ad shown before the 2nd daily draw, which performs network requests to load ads and update consent status.</p>
+        <p>Depending on applicable regional privacy regulations, SDK configuration, and your consent or opt-out choices, Google AdMob may process the following categories of data for ad delivery, frequency capping, fraud prevention, and ad performance measurement:</p>
+        <ul>
+          <li><strong>Device &amp; Advertising Identifiers</strong>: Device ID or advertising identifiers.</li>
+          <li><strong>Coarse Location</strong>: Approximate geographic region inferred from IP address (used to determine applicable regional privacy laws and serve relevant ads).</li>
+          <li><strong>Advertising Interaction &amp; Usage Data</strong>: Ad requests, impressions, clicks, and related product interactions.</li>
+          <li><strong>Diagnostics</strong>: Crash logs and ad performance diagnostics.</li>
+        </ul>
+        <p>Whether such data is used for personalized advertising or cross-service processing depends on the active SDK configuration, the consent or opt-out selections you make via UMP, and your iOS system privacy settings. For full details on how Google processes data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <h2>3. European (GDPR) &amp; US State Privacy Choices (UMP Consent Management)</h2>
+        <p>Flow Twin integrates Google's official <strong>User Messaging Platform (UMP)</strong> to manage regional privacy choices:</p>
+        <ul>
+          <li><strong>EEA, UK &amp; Switzerland (GDPR)</strong>: Where consent is required, the official UMP consent form is presented before any ad request is made. No ads are requested prior to obtaining valid ad request eligibility.</li>
+          <li><strong>Applicable Regulated US States (e.g., California CCPA/CPRA, Virginia, Colorado, Connecticut, Utah, etc.)</strong>: Provides US state privacy notices and options to opt out of the sale or sharing of personal information / targeted advertising via UMP.</li>
+          <li><strong>Managing or Revoking Your Choices</strong>: Whenever privacy options are required in your region (<code>privacyOptionsRequirementStatus == .required</code>), you can open the official UMP form at any time via <strong>Settings → Privacy &amp; On-Device Commitment → Ad Privacy Options</strong> inside the app.</li>
+        </ul>
+        <h2>4. Device Permissions &amp; Contact</h2>
+        <p>Flow Twin does not request camera, photo library, precise GPS location, microphone, contacts, or push notification permissions. For privacy inquiries, please contact: <a href="mailto:oiklp1010@gmail.com">oiklp1010@gmail.com</a>.</p>
       </section>
     </main>
 
